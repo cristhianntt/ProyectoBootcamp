@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ic_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"/>
+    <item
+        android:id="@+id/ic_buscar"
+        android:icon="@drawable/ic_search"
+        android:title="Buscar"/>
+    <item
+        android:id="@+id/ic_tus_libros"
+        android:icon="@drawable/ic_book"
+        android:title="Tus Libros"/>
+    <item
+        android:id="@+id/ic_ajustes"
+        android:icon="@drawable/ic_settings"
+        android:title="Ajustes"/>
+</menu>
