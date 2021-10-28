@@ -17,10 +17,10 @@ class HomeFragment : Fragment() {
 
     private lateinit var Binding: FragmentHomeBinding
 
-    val listPublicidad = mutableListOf<CarouselItem>()
-
     private lateinit var linearLayoutManager: RecyclerView.LayoutManager
     private lateinit var libroRecomendadoAdapter: LibroRecomendadoAdapter
+
+    //private lateinit var recyclerhol: RecyclerView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -29,8 +29,7 @@ class HomeFragment : Fragment() {
         // Inflate the layout for this fragment
 
         //val view = inflater.inflate(R.layout.fragment_home, container, false)
-        //view.recycler.adapter()
-
+        //recyclerhol = view.findViewById(R.id.recyclerView)
         //return view
 
         Binding = FragmentHomeBinding.inflate(inflater, container, false)
@@ -40,37 +39,38 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        //Carousel
+        val list = mutableListOf<CarouselItem>()
+        list.add(CarouselItem(R.drawable.aws))
+        list.add(CarouselItem(R.drawable.delivery))
+        list.add(CarouselItem(R.drawable.nttdata))
+
+        val carousel: ImageCarousel = Binding.carousel
+        carousel.addData(list)
+
+
         //Inicializo Recyclerview
         libroRecomendadoAdapter = LibroRecomendadoAdapter(getLibrosRecomendados())
         linearLayoutManager = LinearLayoutManager(requireContext())
 
-        Binding.recyclerView.layoutManager = linearLayoutManager
-        Binding.recyclerView.adapter = libroRecomendadoAdapter
-
-
-        //Carousel
-//        val imageCarousel: ImageCarousel = Binding.imgCarousel
-//
-//        listPublicidad.add(CarouselItem(R.drawable.aws))
-//        listPublicidad.add(CarouselItem(R.drawable.delivery))
-//        listPublicidad.add(CarouselItem(R.drawable.nttdata))
-//
-//        imageCarousel.addData(listPublicidad)
+        Binding.miReciclador.layoutManager = linearLayoutManager
+        Binding.miReciclador.adapter = libroRecomendadoAdapter
     }
 
     private fun getLibrosRecomendados(): List<LibroRecomendado> {
         val librosRecomendados = mutableListOf<LibroRecomendado>()
 
-        val HarryPotter = LibroRecomendado("Harry Potter","J. K. Rowling", R.drawable.harry_potter)
+        val harryPotter = LibroRecomendado("Harry Potter","J. K. Rowling", R.drawable.harry_potter)
         val senorAnillos = LibroRecomendado("Señor de los Anillos", "J. R. R. Tolkien", R.drawable.senor_anillos)
 
-        librosRecomendados.add(HarryPotter)
+        librosRecomendados.add(harryPotter)
         librosRecomendados.add(senorAnillos)
-        librosRecomendados.add(HarryPotter)
+        librosRecomendados.add(harryPotter)
         librosRecomendados.add(senorAnillos)
-        librosRecomendados.add(HarryPotter)
+        librosRecomendados.add(harryPotter)
         librosRecomendados.add(senorAnillos)
 
         return  librosRecomendados
     }
+
 }

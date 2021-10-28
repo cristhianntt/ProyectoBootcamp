@@ -6,11 +6,12 @@
         <entry key="..\:/Users/cbernals/AndroidStudioProjects/ProyectoBootcamp/app/src/main/res/drawable/btn_login_shape.xml" value="0.23794871794871794" />
         <entry key="..\:/Users/cbernals/AndroidStudioProjects/ProyectoBootcamp/app/src/main/res/drawable/ic_book.xml" value="0.23794871794871794" />
         <entry key="..\:/Users/cbernals/AndroidStudioProjects/ProyectoBootcamp/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/cbernals/AndroidStudioProjects/ProyectoBootcamp/app/src/main/res/layout/activity_olvide_clave.xml" value="0.25" />
         <entry key="..\:/Users/cbernals/AndroidStudioProjects/ProyectoBootcamp/app/src/main/res/layout/activity_principal.xml" value="0.22" />
         <entry key="..\:/Users/cbernals/AndroidStudioProjects/ProyectoBootcamp/app/src/main/res/layout/activity_registro.xml" value="0.22" />
         <entry key="..\:/Users/cbernals/AndroidStudioProjects/ProyectoBootcamp/app/src/main/res/layout/fragment_ajustes.xml" value="0.16576086956521738" />
         <entry key="..\:/Users/cbernals/AndroidStudioProjects/ProyectoBootcamp/app/src/main/res/layout/fragment_buscar.xml" value="0.16576086956521738" />
-        <entry key="..\:/Users/cbernals/AndroidStudioProjects/ProyectoBootcamp/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/Users/cbernals/AndroidStudioProjects/ProyectoBootcamp/app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="..\:/Users/cbernals/AndroidStudioProjects/ProyectoBootcamp/app/src/main/res/layout/fragment_tus_libros.xml" value="0.16576086956521738" />
         <entry key="..\:/Users/cbernals/AndroidStudioProjects/ProyectoBootcamp/app/src/main/res/layout/item_recomendaciones.xml" value="0.25" />
         <entry key="..\:/Users/cbernals/AndroidStudioProjects/ProyectoBootcamp/app/src/main/res/menu/menu.xml" value="0.22552083333333334" />

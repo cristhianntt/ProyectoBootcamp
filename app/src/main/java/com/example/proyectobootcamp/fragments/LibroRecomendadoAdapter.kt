@@ -1,6 +1,6 @@
 package com.example.proyectobootcamp.fragments
 
-import android.content.Context
+import android.renderscript.ScriptGroup
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,13 +13,14 @@ class LibroRecomendadoAdapter(
     ): RecyclerView.Adapter<LibroRecomendadoAdapter.ViewHolder>() {
 
 
-    class ViewHolder(view: View): RecyclerView.ViewHolder(view) {
-        val binding = ItemRecomendacionesBinding.bind(view)
+    class ViewHolder(val binding: ItemRecomendacionesBinding): RecyclerView.ViewHolder(binding.root) {
+        //val binding = ItemRecomendacionesBinding.bind(view)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LibroRecomendadoAdapter.ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_recomendaciones, parent, false)
-        return ViewHolder(view)
+        val binding = ItemRecomendacionesBinding.inflate(LayoutInflater.from(parent.context),parent, false)
+            //LayoutInflater.from(parent.context).inflate(R.layout.item_recomendaciones, parent, false)
+        return ViewHolder(binding)
     }
 
     override fun onBindViewHolder(holder: LibroRecomendadoAdapter.ViewHolder, position: Int) {
